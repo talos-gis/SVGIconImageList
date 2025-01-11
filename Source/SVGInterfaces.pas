@@ -86,12 +86,12 @@ Uses
     {$IFNDEF SvgDisableEngineHint}
     {$MESSAGE HINT 'Use Delphi native Image32 SVG-Engine for SVGIconImageList'}
     {$ENDIF}
-    Image32SVGFactory
+    Image32SVGFactory,
   {$ELSEIF DEFINED(Skia_SVGEngine)}
     {$IFNDEF SvgDisableEngineHint}
     {$MESSAGE HINT 'Use Skia4Delphi "wrapper" SVG-Engine for SVGIconImageList'}
     {$ENDIF}
-    SkiaSVGFactory
+    SkiaSVGFactory,
   {$IFEND}
   {$IFDEF PreferNativeSvgSupport}
     {$IFNDEF SvgDisableEngineHint}
